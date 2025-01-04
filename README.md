@@ -93,4 +93,5 @@ How to Use
 -    Upload an image file if needed.
 -    Click the "Generate Document" button.
 -   The LaTeX document will be generated, and you can download the .tex file or the .pdf file.
+[Screencast from 2025-01-04 15-52-40.webm](https://github.com/user-attachments/assets/9bf4315a-bf5c-4714-aabf-099f44486cce)
 
