@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LATEX AI</title>
+    <link rel="stylesheet" href="public/styles/main.css">
+</head>
+<body>
+    <div class="theme-switch-container">
+        <span>☀️</span>
+        <label class="theme-switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider"></span>
+        </label>
+        <span>🌙</span>
+    </div>
+    <div class="container">
+        <h1>LaTeX AI</h1>
+
+        <form action="/generate" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="title">Título:</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="name">Autor:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="content">Conteúdo:</label>
+                <textarea id="content" name="content" required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="document_type">Tipo de Documento:</label>
+                <select id="document_type" name="document_type">
+                    <option value="article">Artigo</option>
+                    <option value="beamer">Apresentação</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="theme">Tema (para apresentações):</label>
+                <select id="theme" name="theme">
+                    <option value="default">Padrão</option>
+                    <option value="Madrid">Madrid</option>
+                    <option value="Warsaw">Warsaw</option>
+                    <option value="Berlin">Berlin</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="image">Imagem (opcional):</label>
+                <div class="file-input-wrapper">
+                    <label class="file-input-button" for="image">
+                        Escolher arquivo
+                    </label>
+                    <input type="file" id="image" name="image" accept="image/*">
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="image_size">Tamanho da Imagem:</label>
+                <input type="text" id="image_size" name="image_size" value="1.0\textwidth">
+            </div>
+            
+            <div class="form-group">
+                <label for="image_align">Alinhamento da Imagem:</label>
+                <select id="image_align" name="image_align">
+                    <option value="center">Centralizado</option>
+                    <option value="left">Esquerda</option>
+                    <option value="right">Direita</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Formato do Documento:</label>
+                <div class="radio-group">
+                    <label class="radio-label">
+                        <input type="radio" id="file_format_pdf" name="file_format" value="pdf" checked>
+                        PDF
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" id="file_format_tex" name="file_format" value="tex">
+                        LaTeX (.tex)
+                    </label>
+                </div>
+            </div>
+            
+            <button type="submit">Gerar Documento</button>
+        </form>
+    </div>
+<script src="public/scripts/main.js"></script>
+</body>
+</html>
