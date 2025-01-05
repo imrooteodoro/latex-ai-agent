@@ -34,8 +34,10 @@ Before you begin, ensure you have the following:
 Clone this repository to your local environment:
 
 ```bash
-        git clone https://github.com/yourusername/latex-ai.git
-        cd latex-ai
+        git clone https://github.com/imrooteodoro/latex-ai-agent.git
+```
+```bash
+    cd latex-ai-agent
 ```
 
 ### Step 2: Install Dependencies
