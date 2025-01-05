@@ -1,7 +1,3 @@
-import re
-import os
-import subprocess
-from flask import logging
 from services.gemini import BotService
 from services.generate import generate_latex_with_ai
 from system_context.context import system_context
