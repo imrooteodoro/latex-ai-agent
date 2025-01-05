@@ -34,8 +34,10 @@ Before you begin, ensure you have the following:
 Clone this repository to your local environment:
 
 ```bash
-        git clone https://github.com/yourusername/latex-ai.git
-        cd latex-ai
+        git clone https://github.com/imrooteodoro/latex-ai-agent.git
+```
+```bash
+    cd latex-ai-agent
 ```
 
 ### Step 2: Install Dependencies
@@ -93,4 +95,6 @@ How to Use
 -    Upload an image file if needed.
 -    Click the "Generate Document" button.
 -   The LaTeX document will be generated, and you can download the .tex file or the .pdf file.
+
+https://github.com/user-attachments/assets/9bf4315a-bf5c-4714-aabf-099f44486cce
 
