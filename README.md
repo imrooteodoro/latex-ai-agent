@@ -34,7 +34,7 @@ Before you begin, ensure you have the following:
 Clone this repository to your local environment:
 
 ```bash
-        git clone https://github.com/imrooteodoro/latex-ai-agent.git
+    git clone https://github.com/imrooteodoro/latex-ai-agent.git
 ```
 ```bash
     cd latex-ai-agent
@@ -42,14 +42,14 @@ Clone this repository to your local environment:
 
 ### Step 2: Install Dependencies
 ```bash
-        pip install -r requirements.txt
+   pip install -r requirements.txt
 ```
 ### Step 3: Set up LaTeX
 
 - Ubuntu/Debian:
 
 ```bash
-        sudo apt-get install texlive
+     sudo apt-get install texlive
 ```
 - Macos:
 
@@ -68,8 +68,9 @@ To use the AI functionality for generating LaTeX content, you need to configure 
 - Create a `.env` file in the root of your project directory if it doesn't already exist.
 - In the `.env` file, add the following line with your Gemini API key:
 
-   ```env
+   ```bash
    API_KEY=your_gemini_api_key_here
+   ```
 
 ### Step 5: Docker Setup (Optional)
 
@@ -85,7 +86,7 @@ docker run -p 5000:5000 latex-ai
 Start the Flask development server:
 
 ```bash
-        python3 app.py
+     python3 app.py
 ```
 This will start the server at: http://localhost:5000.
 How to Use
